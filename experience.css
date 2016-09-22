@@ -1,0 +1,98 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Style */
+html { background-color: #eaeaea; }
+
+#mainwrapper {
+	font: 10pt normal Arial, sans-serif;
+	height: auto;
+	margin: 20px auto 0 auto;
+	text-align: center;
+	width: 660px;
+	padding-left:115px;
+	padding-bottom:100px;
+}
+
+/* Image Box Style */
+#mainwrapper .box {
+	border: 5px solid #fff;
+	cursor: pointer;
+	height: 130px;
+	float: center;
+	margin: 8px;
+	position: relative;
+	overflow: hidden;
+	width: 400px;
+		-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+		-moz-box-shadow: 1px 1px 1px 1px #ccc;
+		box-shadow: 1px 1px 1px 1px #ccc;
+}
+#mainwrapper .box img {
+	position: absolute;
+	left: 0;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+	transition: all 300ms ease-out;
+}
+
+/* Caption Common Style */
+#mainwrapper .box .caption {
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	color: #fff;
+	z-index: 100;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+		transition: all 300ms ease-out;
+	left: 0;
+}
+
+
+/** Caption 3: Fade **/
+#mainwrapper .box .fade-caption, #mainwrapper .box .scale-caption  {
+	opacity: 0;
+	width: 390px;
+	height: 170px;
+	text-align: left;
+	padding: 15px;
+}
+
+
+
+/** Fade Caption :hover Behaviour **/
+#mainwrapper .box:hover .fade-caption, #mainwrapper .box:hover .scale-caption  {
+	opacity: 1;
+}
