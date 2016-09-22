@@ -51,6 +51,29 @@ body {
   font-size: 18pt;
 }
 
+/*#courses {
+  text-align: left;
+  position: relative;
+  animation-name: courses;
+  -webkit-animation-name: courses;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+  /* Chrome, Safari, Opera */
+@-webkit-keyframes courses {
+    0%   {left:0px; top:0px;}
+    100% {left:250px; top:-140px;}
+}
+
+/* Standard syntax */
+@keyframes courses {
+    0%   {left:0px; top:0px;}
+    100% {left:250px; top:-140px;}
+}
+
+
 #msu-text-info {
   animation-name: edu2;
   -webkit-animation-name: edu2;
@@ -63,6 +86,14 @@ body {
   font-size: 16pt;
   animation-name: edu;
   -webkit-animation-name: edu;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  position:relative;
+}
+
+#courses {
+  animation-name: courses;
+  -webkit-animation-name: courses;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
   position:relative;
@@ -92,6 +123,40 @@ body {
     100% {left:0px; top:-140px;}
 }
 
+  /* Chrome, Safari, Opera */
+@-webkit-keyframes courses {
+    0%   {left:0px; top:0px;}
+    100% {left:0px; top:-100px;}
+}
+
+/* Standard syntax */
+@keyframes courses {
+    0%   {left:0px; top:0px;}
+    100% {left:0px; top:-100px;}
+}
+
+
+#email-text {
+  font-size: 16pt;
+  animation-name: email;
+  -webkit-animation-name: email;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  position:relative;
+  animation-fill-mode: forwards;
+}
+
+  /* Chrome, Safari, Opera */
+@-webkit-keyframes email {
+    0%   {left:0px; top:0px;}
+    100% {left:0px; top:-340px;}
+}
+
+/* Standard syntax */
+@keyframes email {
+    0%   {left:0px; top:0px;}
+    100% {left:0px; top:-340px;}
+}
 
 
 
